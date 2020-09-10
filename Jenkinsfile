@@ -36,4 +36,4 @@ stage('Test')   {
           //sh "${mvnHome}/bin/mvn sonar:sonar"
         }
     }
-}
+//}
