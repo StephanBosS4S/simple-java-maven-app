@@ -8,7 +8,7 @@ node { //test
 		sh "${mvnHome}/bin/mvn package"
 	}
 	stage('Test'){
-		sh'mvn test'
+		sh'maven3 test'
 		
 	}
 
