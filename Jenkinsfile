@@ -7,4 +7,13 @@ node { //test
 	def mvnHome = tool name: 'maven3', type: 'maven'
 		sh "${mvnHome}/bin/mvn package"
 	}
+	stage('Test'){
+		sh'mvn test'
+		
+	}
+
+
+
+
+
 }
