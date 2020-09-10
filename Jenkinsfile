@@ -1,6 +1,6 @@
 node { //test
 	stage('SCM Checkout'){
-		git 'https://github.com/StephanBosS4S/daoCD'
+		git 'https://github.com/StephanBosS4S/simple-java-maven-app'
 	}
 	stage('Build'){
 	// get maven home path
