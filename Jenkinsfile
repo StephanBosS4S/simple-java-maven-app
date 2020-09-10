@@ -28,8 +28,7 @@ stage('Test')   {
  }
  stage('Results') {
   junit '**/target/surefire-reports/TEST-*.xml'
-  archiveArtifacts
-  'target/*.jar'
+  archiveArtifacts 'target/*.jar'
 }
  stage('SonarQube Analysis') {
        // withSonarQubeEnv('sonar') { 
