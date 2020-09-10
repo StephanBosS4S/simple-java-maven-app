@@ -28,11 +28,12 @@ stage('Test')   {
  }
  stage('Results') {
   junit '**/target/surefire-reports/TEST-*.xml'
-  archive 'target/*.jar'
+  archiveArtifacts
+  'target/*.jar'
 }
  stage('SonarQube Analysis') {
-        withSonarQubeEnv('sonar') { 
-          sh "${mvnHome}/bin/mvn sonar:sonar"
+       // withSonarQubeEnv('sonar') { 
+          //sh "${mvnHome}/bin/mvn sonar:sonar"
         }
     }
 }
