@@ -42,5 +42,10 @@ stage('Test')   {
        // withSonarQubeEnv('sonar') { 
           //sh "${mvnHome}/bin/mvn sonar:sonar"
         }
+ 
+ stage('Nexus') {
+       //  
+          //
+        }
     }
 //}
