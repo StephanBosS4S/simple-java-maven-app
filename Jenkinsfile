@@ -34,6 +34,10 @@ stage('Test')   {
     mail bcc: '', body: 'Dit is een test', cc: '', from: '', replyTo: '', subject: 'Jenkins test', to: 'stephanboshu@gmail.com'
  }
  
+ stage('slack bericht'){
+  slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'test', color: 'good', message: 'Test of jenkins werkt met slack', teamDomain: 'Search4Solutions', tokenCredentialId: 'Slack'
+ }
+ 
  stage('SonarQube Analysis') {
        // withSonarQubeEnv('sonar') { 
           //sh "${mvnHome}/bin/mvn sonar:sonar"
