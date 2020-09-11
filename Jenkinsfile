@@ -32,6 +32,7 @@ stage('Test')   {
 }
  stage('Email Notification'){
     mail bcc: '', body: 'Dit is een test', cc: '', from: '', replyTo: '', subject: 'Jenkins test', to: 'stephanboshu@gmail.com'
+ }
  
  stage('SonarQube Analysis') {
        // withSonarQubeEnv('sonar') { 
