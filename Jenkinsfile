@@ -35,7 +35,7 @@ stage('Test')   {
  }
  
  stage('slack bericht'){
-  slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'test', color: 'good', message: 'Test of jenkins werkt met slack', teamDomain: 'Search4Solutions', tokenCredentialId: 'Slack'
+  slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'test', color: 'good', message: 'Hello, this is a test!', teamDomain: 'Search4Solutions', tokenCredentialId: 'Slack'
  }
  
  stage('SonarQube Analysis') {
