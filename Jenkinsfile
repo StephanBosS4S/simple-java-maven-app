@@ -45,7 +45,7 @@ stage('Test')   {
  
  stage('Nexus') {
        nexusArtifactUploader artifacts: [[artifactId: 'my-app', classifier: '', file: 'target/my-app-1.0-SNAPSHOT.jar', type: 'jar']], credentialsId: 'Nexus', groupId: 'com.mycompany.app', nexusUrl: '192.168.99.100:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'nexus', version: '1.0-SNAPSHOT' 
-          
+          //
         }
     }
 }
